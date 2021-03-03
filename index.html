@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>Tokyo</h1>
+
+		<p>
+			HTML is
+			<strong style="background-color: aqua"> FUN</strong>
+			to learn!
+			<sub>1</sub>
+		</p>
+		<p>
+			My favorite <q>123123</q>color is
+			<del>blue</del>
+			red.
+		</p>
+		<blockquote cite="http://www.worldwildlife.org/who/index.html">
+			For 50 years, WWF has been protecting the future of nature. The world's leading conservation
+			organization, WWF works in 100 countries and is supported by 1.2 million members in the United
+			States and close to 5 million globally.
+		</blockquote>
+		<bdo dir="rtl">What a beautiful day!</bdo>
+		<p>The <abbr title="World Health Organization"> WHO</abbr> was founded in 1948.</p>
+        <div
+            class="draggable"
+            draggable="true"
+        >
+            This text <strong>may</strong> be dragged.
+        </div>
+        <br>
+        <button label="Drag Me" ondragstart="event.dataTransfer.setData('text/plain', 'Drag Me Button');">
+
+	</body>
+    <script>
+        const draggable = document.querySelector('.draggable')
+        draggable.addEventListener('dragstart',(e)=>{
+            console.log(e)
+        })
+        draggable.addEventListener('dragend',(e)=>{console.log('end');console.log(e)})
+    </script>
+	<script src="widget.js"></script>    
+</html>
