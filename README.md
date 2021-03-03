@@ -10,7 +10,7 @@ todo
 
 데모
 
-- index.html
+- index.html -- live server 
 
 
 
